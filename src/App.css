@@ -20,3 +20,9 @@
   flex-direction: column;
   align-items: center;
 }
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20rem;
+}
