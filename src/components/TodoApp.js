@@ -16,7 +16,15 @@ const TodoApp = () => {
 
     }
     const CompleteTodo = (id) => {
-        console.log(id)
+        const index = todos.findIndex((todo)=> todo.id === id)
+        console.log(index)
+        //clone: do not mautte
+        const selectedTodo = {...todos[index]}
+        selectedTodo.isCompleted = !selectedTodo.isCompleted;
+        //clone : todos!
+        const updatedTodos =[...todos]
+        updatedTodos[index]=selectedTodo;
+        setTodos(updatedTodos)
     }
 
     return (
