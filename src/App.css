@@ -92,3 +92,6 @@ header span {
   justify-content: center;
   align-items: center;
 }
+.selected {
+  margin: 10px;
+}
